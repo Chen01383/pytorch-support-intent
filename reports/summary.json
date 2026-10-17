@@ -1,0 +1,127 @@
+{
+  "baseline": {
+    "accuracy": 0.8746753246753247,
+    "macro_f1": 0.8748726650579748,
+    "top3_accuracy": 0.9626623376623377,
+    "nll": 0.8211355990968886,
+    "ece_15_bins": 0.28563077715442564
+  },
+  "neural_seeds": {
+    "42": {
+      "raw": {
+        "accuracy": 0.9194805194805195,
+        "macro_f1": 0.9192760054388235,
+        "top3_accuracy": 0.9801948051948052,
+        "nll": 0.3294115448646935,
+        "ece_15_bins": 0.02163748025134899
+      },
+      "calibrated": {
+        "accuracy": 0.9194805194805195,
+        "macro_f1": 0.9192760054388235,
+        "top3_accuracy": 0.9801948051948052,
+        "nll": 0.3068981187813954,
+        "ece_15_bins": 0.018686038416129935
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 2841,
+        "total": 3080,
+        "coverage": 0.9224025974025974,
+        "human_review_fraction": 0.07759740259740255,
+        "accepted_accuracy": 0.955649419218585,
+        "accepted_accuracy_wilson_95": [
+          0.9474440076125817,
+          0.9626242817722507
+        ]
+      }
+    },
+    "43": {
+      "raw": {
+        "accuracy": 0.9191558441558442,
+        "macro_f1": 0.9190274680347219,
+        "top3_accuracy": 0.9805194805194806,
+        "nll": 0.32922629598371045,
+        "ece_15_bins": 0.025593074905480705
+      },
+      "calibrated": {
+        "accuracy": 0.9191558441558442,
+        "macro_f1": 0.9190274680347219,
+        "top3_accuracy": 0.9805194805194806,
+        "nll": 0.3037443761025115,
+        "ece_15_bins": 0.018251048654174783
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 2853,
+        "total": 3080,
+        "coverage": 0.9262987012987013,
+        "human_review_fraction": 0.07370129870129871,
+        "accepted_accuracy": 0.953732912723449,
+        "accepted_accuracy_wilson_95": [
+          0.9453957712411925,
+          0.9608498280748929
+        ]
+      }
+    },
+    "44": {
+      "raw": {
+        "accuracy": 0.9185064935064935,
+        "macro_f1": 0.9184696893412343,
+        "top3_accuracy": 0.9811688311688311,
+        "nll": 0.31500809338566027,
+        "ece_15_bins": 0.020057866694681188
+      },
+      "calibrated": {
+        "accuracy": 0.9185064935064935,
+        "macro_f1": 0.9184696893412343,
+        "top3_accuracy": 0.9811688311688311,
+        "nll": 0.30235947334814944,
+        "ece_15_bins": 0.019550723529720492
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 2830,
+        "total": 3080,
+        "coverage": 0.9188311688311688,
+        "human_review_fraction": 0.08116883116883122,
+        "accepted_accuracy": 0.9558303886925795,
+        "accepted_accuracy_wilson_95": [
+          0.9476222248732121,
+          0.9628027362584065
+        ]
+      }
+    }
+  },
+  "neural_mean_std": {
+    "accuracy": {
+      "mean": 0.919047619047619,
+      "sample_std": 0.0004959497505363434
+    },
+    "macro_f1": {
+      "mean": 0.9189243876049266,
+      "sample_std": 0.0004129232296238114
+    },
+    "top3_accuracy": {
+      "mean": 0.9806277056277057,
+      "sample_std": 0.0004959497505363314
+    }
+  },
+  "deployed_seed": 42,
+  "paired_accuracy_bootstrap": {
+    "accuracy_difference": 0.044805194805194806,
+    "percentile_95": [
+      0.032467532467532464,
+      0.05584415584415584
+    ],
+    "repetitions": 2000,
+    "unit": "test query; paired; conditional on fitted models"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cu130",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "torch_threads": 4
+  },
+  "experiment_seconds": 37.58232750000025
+}

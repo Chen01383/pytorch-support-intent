@@ -1,0 +1,212 @@
+[
+  {
+    "id": "test:2711",
+    "text": "My transfer is pending.",
+    "true": "balance_not_updated_after_bank_transfer",
+    "predicted": "pending_transfer",
+    "confidence": 0.9994622786268388
+  },
+  {
+    "id": "test:2763",
+    "text": "Where do I find the exchange rate?",
+    "true": "exchange_charge",
+    "predicted": "exchange_rate",
+    "confidence": 0.9984636672566655
+  },
+  {
+    "id": "test:2637",
+    "text": "how many transactions can i make with a disposable card",
+    "true": "get_disposable_virtual_card",
+    "predicted": "disposable_card_limits",
+    "confidence": 0.997232964869037
+  },
+  {
+    "id": "test:1192",
+    "text": "What other methods are there to verify my identity?",
+    "true": "why_verify_identity",
+    "predicted": "verify_my_identity",
+    "confidence": 0.9891118817822794
+  },
+  {
+    "id": "test:1689",
+    "text": "I wasn't charged the correct amount for an item I purchased, how can I fix this?",
+    "true": "request_refund",
+    "predicted": "card_payment_wrong_exchange_rate",
+    "confidence": 0.9884946927386514
+  },
+  {
+    "id": "test:1225",
+    "text": "What do i need to verify my id?",
+    "true": "unable_to_verify_identity",
+    "predicted": "verify_my_identity",
+    "confidence": 0.9880818890399403
+  },
+  {
+    "id": "test:2761",
+    "text": "whats your exchange rate",
+    "true": "exchange_charge",
+    "predicted": "exchange_rate",
+    "confidence": 0.9859934592257518
+  },
+  {
+    "id": "test:521",
+    "text": "Where can I view my PIN?",
+    "true": "pin_blocked",
+    "predicted": "get_physical_card",
+    "confidence": 0.9845923604808461
+  },
+  {
+    "id": "test:775",
+    "text": "My cash withdrawal was partly declined",
+    "true": "wrong_amount_of_cash_received",
+    "predicted": "declined_cash_withdrawal",
+    "confidence": 0.9838145432673797
+  },
+  {
+    "id": "test:5",
+    "text": "When will I get my card?",
+    "true": "card_arrival",
+    "predicted": "card_delivery_estimate",
+    "confidence": 0.9747550679280863
+  },
+  {
+    "id": "test:2338",
+    "text": "How do I top up my card?",
+    "true": "transfer_into_account",
+    "predicted": "topping_up_by_card",
+    "confidence": 0.9674732250141324
+  },
+  {
+    "id": "test:551",
+    "text": "Can I reactivate my PIN?",
+    "true": "pin_blocked",
+    "predicted": "change_pin",
+    "confidence": 0.9672012463349596
+  },
+  {
+    "id": "test:2544",
+    "text": "My card is just not working at this time.",
+    "true": "virtual_card_not_working",
+    "predicted": "card_not_working",
+    "confidence": 0.9631943347038371
+  },
+  {
+    "id": "test:1006",
+    "text": "The app wouldn't accept my top up.",
+    "true": "top_up_reverted",
+    "predicted": "top_up_failed",
+    "confidence": 0.9628548870864193
+  },
+  {
+    "id": "test:1391",
+    "text": "How many virtual cards do I get?",
+    "true": "disposable_card_limits",
+    "predicted": "getting_virtual_card",
+    "confidence": 0.9603034081371568
+  },
+  {
+    "id": "test:1394",
+    "text": "What can I use a virtual disposable card for?",
+    "true": "disposable_card_limits",
+    "predicted": "get_disposable_virtual_card",
+    "confidence": 0.9543909718883091
+  },
+  {
+    "id": "test:618",
+    "text": "What are the fees for top-ups?",
+    "true": "top_up_by_bank_transfer_charge",
+    "predicted": "top_up_by_card_charge",
+    "confidence": 0.9522607738400104
+  },
+  {
+    "id": "test:799",
+    "text": "Will declined funds I tried to withdraw be returned to me?",
+    "true": "wrong_amount_of_cash_received",
+    "predicted": "declined_cash_withdrawal",
+    "confidence": 0.9515171573740794
+  },
+  {
+    "id": "test:2571",
+    "text": "Is there a fee for exchanging cash?",
+    "true": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "exchange_charge",
+    "confidence": 0.948424808833653
+  },
+  {
+    "id": "test:773",
+    "text": "Where is the money I pushed it's on my mobile app as being withdrawn.",
+    "true": "wrong_amount_of_cash_received",
+    "predicted": "cash_withdrawal_not_recognised",
+    "confidence": 0.9477261436859966
+  },
+  {
+    "id": "test:1067",
+    "text": "Why does my account not accept cash deposits?",
+    "true": "balance_not_updated_after_cheque_or_cash_deposit",
+    "predicted": "declined_cash_withdrawal",
+    "confidence": 0.9357606782296474
+  },
+  {
+    "id": "test:1736",
+    "text": "Why was I unable to do a transfer?",
+    "true": "declined_transfer",
+    "predicted": "failed_transfer",
+    "confidence": 0.9329843515917503
+  },
+  {
+    "id": "test:2701",
+    "text": "I transferred some money but it is yet to arrive.",
+    "true": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_not_received_by_recipient",
+    "confidence": 0.9316033102236377
+  },
+  {
+    "id": "test:11",
+    "text": "How long does a card delivery take?",
+    "true": "card_arrival",
+    "predicted": "card_delivery_estimate",
+    "confidence": 0.9303063983518799
+  },
+  {
+    "id": "test:2166",
+    "text": "How do I do a successful transfer to an account?",
+    "true": "beneficiary_not_allowed",
+    "predicted": "transfer_into_account",
+    "confidence": 0.9272873441840955
+  },
+  {
+    "id": "test:2523",
+    "text": "My non-physical card will not work",
+    "true": "virtual_card_not_working",
+    "predicted": "card_not_working",
+    "confidence": 0.9253364619354892
+  },
+  {
+    "id": "test:522",
+    "text": "Will you reinstate my PIN?",
+    "true": "pin_blocked",
+    "predicted": "change_pin",
+    "confidence": 0.9210792936175387
+  },
+  {
+    "id": "test:2477",
+    "text": "How can I top-up my card?",
+    "true": "top_up_by_cash_or_cheque",
+    "predicted": "topping_up_by_card",
+    "confidence": 0.9065957188082674
+  },
+  {
+    "id": "test:2687",
+    "text": "When will my transfer be available in my account.",
+    "true": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_timing",
+    "confidence": 0.9029340020881773
+  },
+  {
+    "id": "test:2622",
+    "text": "how does a virtual card work",
+    "true": "get_disposable_virtual_card",
+    "predicted": "getting_virtual_card",
+    "confidence": 0.8925856518714615
+  }
+]

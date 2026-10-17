@@ -1,0 +1,11 @@
+.venv/
+data/
+models/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+reports/verification_temp/

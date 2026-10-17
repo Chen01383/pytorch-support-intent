@@ -1,0 +1,18 @@
+{
+  "device": "cpu",
+  "threads": 4,
+  "batch_size": 1,
+  "concurrency": 1,
+  "warmups": 10,
+  "requests": 100,
+  "queries": [
+    "I lost my card. How can I freeze it?",
+    "Where can I find my card PIN?",
+    "Why is my transfer still pending?",
+    "Can I change my account's personal details?",
+    "I was charged twice for the same purchase."
+  ],
+  "p50_ms": 2.5749,
+  "p95_ms": 3.481025,
+  "scope": "Warm local request: tokenization, frozen encoder, CPU classifier head, calibration, ranking, routing and Python dict construction. Excludes model loading, disk/network I/O, HTTP and serialization."
+}

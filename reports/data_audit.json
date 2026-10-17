@@ -1,0 +1,25 @@
+{
+  "official_train_rows": 10003,
+  "official_test_rows": 3080,
+  "classes": 77,
+  "removed_training_rows": {
+    "duplicate_train_rows_removed": 30,
+    "test_overlap_train_rows_removed": 25,
+    "conflicting_train_rows_removed": 2
+  },
+  "split_sizes": {
+    "train": 6962,
+    "selection": 1492,
+    "calibration": 1492,
+    "test": 3080
+  },
+  "test_internal_normalized_duplicates": 4,
+  "decontamination": "Full official test preserved; matching normalized inputs removed from training candidates, without consulting test labels.",
+  "pairwise_split_text_overlaps": 0,
+  "split_id_sha256": {
+    "train": "b31e4d53e950b2e0cb110b2ea8cd2949896d7d625eb97a31a38bb3c4232c88ef",
+    "selection": "6e60f8eec9987dc7891839065c351201fc78b0750e21f160aebad37546b7165f",
+    "calibration": "3c6e1e3b7504d06a9431390d02eea3dfe5ea6834e2789a95912d65ec0695371b",
+    "test": "3e8531568dd6173db9832f5705dbd8f9dd18beac7923c68db53b57c379f31b64"
+  }
+}

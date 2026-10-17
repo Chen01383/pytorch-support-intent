@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checkpoints_verified": 3,
+  "test_rows_recomputed": 3080,
+  "pairwise_split_text_overlaps": 0,
+  "reported_metrics_recomputed": true,
+  "invalid_input_checks_passed": true,
+  "non_english_guard_checked": true,
+  "example_prediction": {
+    "input": "I lost my card. How can I freeze it?",
+    "route": "auto",
+    "confidence": 0.8759852983017945,
+    "threshold": 0.6,
+    "top3": [
+      {
+        "intent": "lost_or_stolen_card",
+        "probability": 0.8759852983017945
+      },
+      {
+        "intent": "lost_or_stolen_phone",
+        "probability": 0.0693971139847202
+      },
+      {
+        "intent": "card_not_working",
+        "probability": 0.013562099376420125
+      }
+    ],
+    "note": "Routing predicts an intent; it does not answer banking questions. Confidence is not a guarantee of correctness or an out-of-domain detector."
+  }
+}

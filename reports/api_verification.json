@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "checks": [
+    "health_ready",
+    "real_prediction_and_auto_route",
+    "ambiguous_query_human_route",
+    "routing_matches_probability_even_for_ambiguous_high_confidence_failure",
+    "unsupported_input_human_route",
+    "empty_oversized_wrong_shape_and_content_type_rejected"
+  ],
+  "real_prediction": {
+    "input": "I lost my card. How can I freeze it?",
+    "route": "auto",
+    "confidence": 0.8759852983017945,
+    "threshold": 0.6,
+    "top3": [
+      {
+        "intent": "lost_or_stolen_card",
+        "probability": 0.8759852983017945
+      },
+      {
+        "intent": "lost_or_stolen_phone",
+        "probability": 0.0693971139847202
+      },
+      {
+        "intent": "card_not_working",
+        "probability": 0.013562099376420125
+      }
+    ],
+    "note": "Routing predicts an intent; it does not answer banking questions. Confidence is not a guarantee of correctness or an out-of-domain detector."
+  },
+  "ambiguous_prediction": {
+    "input": "Can you help me?",
+    "route": "human",
+    "confidence": 0.11647895829932575,
+    "threshold": 0.6,
+    "top3": [
+      {
+        "intent": "declined_card_payment",
+        "probability": 0.11647895829932575
+      },
+      {
+        "intent": "card_not_working",
+        "probability": 0.1058061674736798
+      },
+      {
+        "intent": "lost_or_stolen_card",
+        "probability": 0.10099529278339668
+      }
+    ],
+    "note": "Routing predicts an intent; it does not answer banking questions. Confidence is not a guarantee of correctness or an out-of-domain detector."
+  },
+  "documented_high_confidence_limitation": {
+    "input": "I need help with my account.",
+    "route": "auto",
+    "confidence": 0.9150570017206467,
+    "threshold": 0.6,
+    "top3": [
+      {
+        "intent": "terminate_account",
+        "probability": 0.9150570017206467
+      },
+      {
+        "intent": "why_verify_identity",
+        "probability": 0.028412098453989336
+      },
+      {
+        "intent": "passcode_forgotten",
+        "probability": 0.022725992062533135
+      }
+    ],
+    "note": "Routing predicts an intent; it does not answer banking questions. Confidence is not a guarantee of correctness or an out-of-domain detector."
+  }
+}

@@ -1,0 +1,1310 @@
+{
+  "selected_hidden_dim": 128,
+  "selected_baseline_C": 4.0,
+  "deployment_seed": 42,
+  "calibration": {
+    "42": {
+      "temperature": 1.3679855225061877,
+      "threshold": 0.6,
+      "raw": {
+        "accuracy": 0.9142091152815014,
+        "macro_f1": 0.9152434601829019,
+        "top3_accuracy": 0.9812332439678284,
+        "nll": 0.341750914835033,
+        "ece_15_bins": 0.03259106755757971
+      },
+      "calibrated": {
+        "accuracy": 0.9142091152815014,
+        "macro_f1": 0.9152434601829019,
+        "top3_accuracy": 0.9812332439678284,
+        "nll": 0.3144281686076993,
+        "ece_15_bins": 0.01719690443515907
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 1380,
+        "total": 1492,
+        "coverage": 0.9249329758713136,
+        "human_review_fraction": 0.07506702412868638,
+        "accepted_accuracy": 0.9514492753623188,
+        "accepted_accuracy_wilson_95": [
+          0.9388030575494918,
+          0.9615891023022861
+        ]
+      }
+    },
+    "43": {
+      "temperature": 1.4257856712344583,
+      "threshold": 0.6,
+      "raw": {
+        "accuracy": 0.9101876675603218,
+        "macro_f1": 0.9101740966412017,
+        "top3_accuracy": 0.9772117962466488,
+        "nll": 0.3606175237074627,
+        "ece_15_bins": 0.03618351651611484
+      },
+      "calibrated": {
+        "accuracy": 0.9101876675603218,
+        "macro_f1": 0.9101740966412017,
+        "top3_accuracy": 0.9772117962466488,
+        "nll": 0.3246462674684427,
+        "ece_15_bins": 0.018264199659050205
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 1380,
+        "total": 1492,
+        "coverage": 0.9249329758713136,
+        "human_review_fraction": 0.07506702412868638,
+        "accepted_accuracy": 0.9514492753623188,
+        "accepted_accuracy_wilson_95": [
+          0.9388030575494918,
+          0.9615891023022861
+        ]
+      }
+    },
+    "44": {
+      "temperature": 1.300559996544697,
+      "threshold": 0.6,
+      "raw": {
+        "accuracy": 0.9135388739946381,
+        "macro_f1": 0.9131970455033975,
+        "top3_accuracy": 0.9785522788203753,
+        "nll": 0.337911283025128,
+        "ece_15_bins": 0.025076367621785008
+      },
+      "calibrated": {
+        "accuracy": 0.9135388739946381,
+        "macro_f1": 0.9131970455033975,
+        "top3_accuracy": 0.9785522788203753,
+        "nll": 0.31815987078014774,
+        "ece_15_bins": 0.02168609920670168
+      },
+      "routing": {
+        "threshold": 0.6,
+        "accepted": 1374,
+        "total": 1492,
+        "coverage": 0.920911528150134,
+        "human_review_fraction": 0.079088471849866,
+        "accepted_accuracy": 0.9512372634643377,
+        "accepted_accuracy_wilson_95": [
+          0.9385378230842916,
+          0.9614205807376737
+        ]
+      }
+    }
+  },
+  "baseline_candidates": [
+    {
+      "C": 1.0,
+      "selection": {
+        "accuracy": 0.8324396782841823,
+        "macro_f1": 0.8180959418904855,
+        "top3_accuracy": 0.9436997319034852,
+        "nll": 1.4741771465788915,
+        "ece_15_bins": 0.4965182978348787
+      }
+    },
+    {
+      "C": 4.0,
+      "selection": {
+        "accuracy": 0.8579088471849866,
+        "macro_f1": 0.8501032714438822,
+        "top3_accuracy": 0.9584450402144772,
+        "nll": 0.8712694090002098,
+        "ece_15_bins": 0.2859246323926494
+      }
+    }
+  ],
+  "head_candidates": [
+    {
+      "seed": 42,
+      "hidden_dim": 0,
+      "best_epoch": 31,
+      "selection_macro_f1": 0.9063364153607989,
+      "history": [
+        {
+          "epoch": 1,
+          "train_cross_entropy": 3.871769494689836,
+          "selection_macro_f1": 0.659992233783243
+        },
+        {
+          "epoch": 2,
+          "train_cross_entropy": 3.0206920384881277,
+          "selection_macro_f1": 0.7517629118910875
+        },
+        {
+          "epoch": 3,
+          "train_cross_entropy": 2.355314913031631,
+          "selection_macro_f1": 0.7818553939502533
+        },
+        {
+          "epoch": 4,
+          "train_cross_entropy": 1.8571947310649606,
+          "selection_macro_f1": 0.8089164985984063
+        },
+        {
+          "epoch": 5,
+          "train_cross_entropy": 1.502311014129115,
+          "selection_macro_f1": 0.8273461825325668
+        },
+        {
+          "epoch": 6,
+          "train_cross_entropy": 1.2507203562237073,
+          "selection_macro_f1": 0.8528409570246311
+        },
+        {
+          "epoch": 7,
+          "train_cross_entropy": 1.0701709046715877,
+          "selection_macro_f1": 0.8630469169682816
+        },
+        {
+          "epoch": 8,
+          "train_cross_entropy": 0.937003571868662,
+          "selection_macro_f1": 0.8690490546571472
+        },
+        {
+          "epoch": 9,
+          "train_cross_entropy": 0.8359144726247494,
+          "selection_macro_f1": 0.8715133165976024
+        },
+        {
+          "epoch": 10,
+          "train_cross_entropy": 0.7560870375005858,
+          "selection_macro_f1": 0.8784772788030015
+        },
+        {
+          "epoch": 11,
+          "train_cross_entropy": 0.6927074141729772,
+          "selection_macro_f1": 0.8776054420669326
+        },
+        {
+          "epoch": 12,
+          "train_cross_entropy": 0.6407105260643936,
+          "selection_macro_f1": 0.8838157678930453
+        },
+        {
+          "epoch": 13,
+          "train_cross_entropy": 0.5973551849872345,
+          "selection_macro_f1": 0.8850146944571076
+        },
+        {
+          "epoch": 14,
+          "train_cross_entropy": 0.5599503216131156,
+          "selection_macro_f1": 0.8875119190365556
+        },
+        {
+          "epoch": 15,
+          "train_cross_entropy": 0.5281131436550148,
+          "selection_macro_f1": 0.8878843091710528
+        },
+        {
+          "epoch": 16,
+          "train_cross_entropy": 0.5000428669122539,
+          "selection_macro_f1": 0.8910244632466365
+        },
+        {
+          "epoch": 17,
+          "train_cross_entropy": 0.4755366948770059,
+          "selection_macro_f1": 0.8952618421170861
+        },
+        {
+          "epoch": 18,
+          "train_cross_entropy": 0.45382286323551746,
+          "selection_macro_f1": 0.8948141154709354
+        },
+        {
+          "epoch": 19,
+          "train_cross_entropy": 0.43415471592089183,
+          "selection_macro_f1": 0.8956591006943642
+        },
+        {
+          "epoch": 20,
+          "train_cross_entropy": 0.4167292363871038,
+          "selection_macro_f1": 0.8982441108508498
+        },
+        {
+          "epoch": 21,
+          "train_cross_entropy": 0.4006026822648765,
+          "selection_macro_f1": 0.8993726172586414
+        },
+        {
+          "epoch": 22,
+          "train_cross_entropy": 0.38604783732738346,
+          "selection_macro_f1": 0.9024583899414866
+        },
+        {
+          "epoch": 23,
+          "train_cross_entropy": 0.37253874066026005,
+          "selection_macro_f1": 0.9012560648339338
+        },
+        {
+          "epoch": 24,
+          "train_cross_entropy": 0.36018662394822515,
+          "selection_macro_f1": 0.9019974627604127
+        },
+        {
+          "epoch": 25,
+          "train_cross_entropy": 0.3489662621152089,
+          "selection_macro_f1": 0.9040948521201534
+        },
+        {
+          "epoch": 26,
+          "train_cross_entropy": 0.337996289515009,
+          "selection_macro_f1": 0.9043081307540253
+        },
+        {
+          "epoch": 27,
+          "train_cross_entropy": 0.32797963737465463,
+          "selection_macro_f1": 0.9053435260801617
+        },
+        {
+          "epoch": 28,
+          "train_cross_entropy": 0.3185754352535745,
+          "selection_macro_f1": 0.9055385623141866
+        },
+        {
+          "epoch": 29,
+          "train_cross_entropy": 0.3100029010174775,
+          "selection_macro_f1": 0.9053772515598071
+        },
+        {
+          "epoch": 30,
+          "train_cross_entropy": 0.3014350657626083,
+          "selection_macro_f1": 0.9050184890043927
+        },
+        {
+          "epoch": 31,
+          "train_cross_entropy": 0.2937811333509534,
+          "selection_macro_f1": 0.9063364153607989
+        },
+        {
+          "epoch": 32,
+          "train_cross_entropy": 0.28632463599134883,
+          "selection_macro_f1": 0.9036630133321216
+        },
+        {
+          "epoch": 33,
+          "train_cross_entropy": 0.27929747542989763,
+          "selection_macro_f1": 0.9040346141403667
+        },
+        {
+          "epoch": 34,
+          "train_cross_entropy": 0.2726748854315716,
+          "selection_macro_f1": 0.9046025973583619
+        },
+        {
+          "epoch": 35,
+          "train_cross_entropy": 0.2659817582760964,
+          "selection_macro_f1": 0.9037162101857972
+        },
+        {
+          "epoch": 36,
+          "train_cross_entropy": 0.2600171217217044,
+          "selection_macro_f1": 0.9044846672005594
+        },
+        {
+          "epoch": 37,
+          "train_cross_entropy": 0.25414409397474413,
+          "selection_macro_f1": 0.9030506297285072
+        },
+        {
+          "epoch": 38,
+          "train_cross_entropy": 0.24867447684616648,
+          "selection_macro_f1": 0.9042030030890962
+        },
+        {
+          "epoch": 39,
+          "train_cross_entropy": 0.24338779575144617,
+          "selection_macro_f1": 0.9029938780342056
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "hidden_dim": 128,
+      "best_epoch": 39,
+      "selection_macro_f1": 0.9084910446941201,
+      "history": [
+        {
+          "epoch": 1,
+          "train_cross_entropy": 3.5287353426723156,
+          "selection_macro_f1": 0.5190012022969825
+        },
+        {
+          "epoch": 2,
+          "train_cross_entropy": 1.4180718727989876,
+          "selection_macro_f1": 0.7632613955196725
+        },
+        {
+          "epoch": 3,
+          "train_cross_entropy": 0.7632759057287168,
+          "selection_macro_f1": 0.8320221660036499
+        },
+        {
+          "epoch": 4,
+          "train_cross_entropy": 0.5669218217528643,
+          "selection_macro_f1": 0.8589816720018941
+        },
+        {
+          "epoch": 5,
+          "train_cross_entropy": 0.46705057690520974,
+          "selection_macro_f1": 0.876540524614725
+        },
+        {
+          "epoch": 6,
+          "train_cross_entropy": 0.4004158398023593,
+          "selection_macro_f1": 0.8725523458838854
+        },
+        {
+          "epoch": 7,
+          "train_cross_entropy": 0.36838955156284653,
+          "selection_macro_f1": 0.8904399970272994
+        },
+        {
+          "epoch": 8,
+          "train_cross_entropy": 0.323384708301393,
+          "selection_macro_f1": 0.8885380021760595
+        },
+        {
+          "epoch": 9,
+          "train_cross_entropy": 0.3006880574786639,
+          "selection_macro_f1": 0.8912231946099127
+        },
+        {
+          "epoch": 10,
+          "train_cross_entropy": 0.27779246897952237,
+          "selection_macro_f1": 0.885266368857859
+        },
+        {
+          "epoch": 11,
+          "train_cross_entropy": 0.2615004240293607,
+          "selection_macro_f1": 0.8926590312084779
+        },
+        {
+          "epoch": 12,
+          "train_cross_entropy": 0.24582863687886755,
+          "selection_macro_f1": 0.8935436216762261
+        },
+        {
+          "epoch": 13,
+          "train_cross_entropy": 0.22666584047323257,
+          "selection_macro_f1": 0.8932239536341307
+        },
+        {
+          "epoch": 14,
+          "train_cross_entropy": 0.20977596908645088,
+          "selection_macro_f1": 0.8984502602254391
+        },
+        {
+          "epoch": 15,
+          "train_cross_entropy": 0.2027432333118304,
+          "selection_macro_f1": 0.8915634800186295
+        },
+        {
+          "epoch": 16,
+          "train_cross_entropy": 0.18949067355897434,
+          "selection_macro_f1": 0.8996473309037486
+        },
+        {
+          "epoch": 17,
+          "train_cross_entropy": 0.18212902446402382,
+          "selection_macro_f1": 0.9010743206015541
+        },
+        {
+          "epoch": 18,
+          "train_cross_entropy": 0.17468421539589785,
+          "selection_macro_f1": 0.8952704999718919
+        },
+        {
+          "epoch": 19,
+          "train_cross_entropy": 0.161184956928294,
+          "selection_macro_f1": 0.8996965726951225
+        },
+        {
+          "epoch": 20,
+          "train_cross_entropy": 0.15162312755020346,
+          "selection_macro_f1": 0.8988084218918388
+        },
+        {
+          "epoch": 21,
+          "train_cross_entropy": 0.1417464804384805,
+          "selection_macro_f1": 0.905135705316089
+        },
+        {
+          "epoch": 22,
+          "train_cross_entropy": 0.13608963881303304,
+          "selection_macro_f1": 0.9025786176792358
+        },
+        {
+          "epoch": 23,
+          "train_cross_entropy": 0.12919662663372244,
+          "selection_macro_f1": 0.9018049968104042
+        },
+        {
+          "epoch": 24,
+          "train_cross_entropy": 0.12432124710132664,
+          "selection_macro_f1": 0.9065723267245874
+        },
+        {
+          "epoch": 25,
+          "train_cross_entropy": 0.11997302788336775,
+          "selection_macro_f1": 0.9045819857289128
+        },
+        {
+          "epoch": 26,
+          "train_cross_entropy": 0.11539857654573588,
+          "selection_macro_f1": 0.9054723149411591
+        },
+        {
+          "epoch": 27,
+          "train_cross_entropy": 0.10877874045194275,
+          "selection_macro_f1": 0.9013792654893761
+        },
+        {
+          "epoch": 28,
+          "train_cross_entropy": 0.10569765440385528,
+          "selection_macro_f1": 0.9046561380786453
+        },
+        {
+          "epoch": 29,
+          "train_cross_entropy": 0.10211218679706381,
+          "selection_macro_f1": 0.9022731423933339
+        },
+        {
+          "epoch": 30,
+          "train_cross_entropy": 0.09462280373477758,
+          "selection_macro_f1": 0.9047463986798089
+        },
+        {
+          "epoch": 31,
+          "train_cross_entropy": 0.09093964628016973,
+          "selection_macro_f1": 0.9078793351939549
+        },
+        {
+          "epoch": 32,
+          "train_cross_entropy": 0.08517740398251575,
+          "selection_macro_f1": 0.9070065363052789
+        },
+        {
+          "epoch": 33,
+          "train_cross_entropy": 0.08543387460352463,
+          "selection_macro_f1": 0.9015968357932904
+        },
+        {
+          "epoch": 34,
+          "train_cross_entropy": 0.07896931338236614,
+          "selection_macro_f1": 0.9022585522480424
+        },
+        {
+          "epoch": 35,
+          "train_cross_entropy": 0.07678533505131478,
+          "selection_macro_f1": 0.9057082998588252
+        },
+        {
+          "epoch": 36,
+          "train_cross_entropy": 0.07300178807777805,
+          "selection_macro_f1": 0.9040857894224664
+        },
+        {
+          "epoch": 37,
+          "train_cross_entropy": 0.07240073631456856,
+          "selection_macro_f1": 0.9023292465298014
+        },
+        {
+          "epoch": 38,
+          "train_cross_entropy": 0.06491637903810643,
+          "selection_macro_f1": 0.9035363205295469
+        },
+        {
+          "epoch": 39,
+          "train_cross_entropy": 0.06669327673196998,
+          "selection_macro_f1": 0.9084910446941201
+        },
+        {
+          "epoch": 40,
+          "train_cross_entropy": 0.06209606535602184,
+          "selection_macro_f1": 0.901523825953481
+        },
+        {
+          "epoch": 41,
+          "train_cross_entropy": 0.06254082865300312,
+          "selection_macro_f1": 0.9031046511290806
+        },
+        {
+          "epoch": 42,
+          "train_cross_entropy": 0.057434133872822146,
+          "selection_macro_f1": 0.9076167137344271
+        },
+        {
+          "epoch": 43,
+          "train_cross_entropy": 0.0568577443056624,
+          "selection_macro_f1": 0.9066011235105607
+        },
+        {
+          "epoch": 44,
+          "train_cross_entropy": 0.05132911062572784,
+          "selection_macro_f1": 0.9051411539580729
+        },
+        {
+          "epoch": 45,
+          "train_cross_entropy": 0.05005393356632755,
+          "selection_macro_f1": 0.9050741406199518
+        },
+        {
+          "epoch": 46,
+          "train_cross_entropy": 0.05069929281936162,
+          "selection_macro_f1": 0.8994436246383716
+        },
+        {
+          "epoch": 47,
+          "train_cross_entropy": 0.04976921726828315,
+          "selection_macro_f1": 0.9061737949645559
+        }
+      ]
+    }
+  ],
+  "final_training": {
+    "42": {
+      "seed": 42,
+      "hidden_dim": 128,
+      "best_epoch": 39,
+      "selection_macro_f1": 0.9084910446941201,
+      "history": [
+        {
+          "epoch": 1,
+          "train_cross_entropy": 3.5287353426723156,
+          "selection_macro_f1": 0.5190012022969825
+        },
+        {
+          "epoch": 2,
+          "train_cross_entropy": 1.4180718727989876,
+          "selection_macro_f1": 0.7632613955196725
+        },
+        {
+          "epoch": 3,
+          "train_cross_entropy": 0.7632759057287168,
+          "selection_macro_f1": 0.8320221660036499
+        },
+        {
+          "epoch": 4,
+          "train_cross_entropy": 0.5669218217528643,
+          "selection_macro_f1": 0.8589816720018941
+        },
+        {
+          "epoch": 5,
+          "train_cross_entropy": 0.46705057690520974,
+          "selection_macro_f1": 0.876540524614725
+        },
+        {
+          "epoch": 6,
+          "train_cross_entropy": 0.4004158398023593,
+          "selection_macro_f1": 0.8725523458838854
+        },
+        {
+          "epoch": 7,
+          "train_cross_entropy": 0.36838955156284653,
+          "selection_macro_f1": 0.8904399970272994
+        },
+        {
+          "epoch": 8,
+          "train_cross_entropy": 0.323384708301393,
+          "selection_macro_f1": 0.8885380021760595
+        },
+        {
+          "epoch": 9,
+          "train_cross_entropy": 0.3006880574786639,
+          "selection_macro_f1": 0.8912231946099127
+        },
+        {
+          "epoch": 10,
+          "train_cross_entropy": 0.27779246897952237,
+          "selection_macro_f1": 0.885266368857859
+        },
+        {
+          "epoch": 11,
+          "train_cross_entropy": 0.2615004240293607,
+          "selection_macro_f1": 0.8926590312084779
+        },
+        {
+          "epoch": 12,
+          "train_cross_entropy": 0.24582863687886755,
+          "selection_macro_f1": 0.8935436216762261
+        },
+        {
+          "epoch": 13,
+          "train_cross_entropy": 0.22666584047323257,
+          "selection_macro_f1": 0.8932239536341307
+        },
+        {
+          "epoch": 14,
+          "train_cross_entropy": 0.20977596908645088,
+          "selection_macro_f1": 0.8984502602254391
+        },
+        {
+          "epoch": 15,
+          "train_cross_entropy": 0.2027432333118304,
+          "selection_macro_f1": 0.8915634800186295
+        },
+        {
+          "epoch": 16,
+          "train_cross_entropy": 0.18949067355897434,
+          "selection_macro_f1": 0.8996473309037486
+        },
+        {
+          "epoch": 17,
+          "train_cross_entropy": 0.18212902446402382,
+          "selection_macro_f1": 0.9010743206015541
+        },
+        {
+          "epoch": 18,
+          "train_cross_entropy": 0.17468421539589785,
+          "selection_macro_f1": 0.8952704999718919
+        },
+        {
+          "epoch": 19,
+          "train_cross_entropy": 0.161184956928294,
+          "selection_macro_f1": 0.8996965726951225
+        },
+        {
+          "epoch": 20,
+          "train_cross_entropy": 0.15162312755020346,
+          "selection_macro_f1": 0.8988084218918388
+        },
+        {
+          "epoch": 21,
+          "train_cross_entropy": 0.1417464804384805,
+          "selection_macro_f1": 0.905135705316089
+        },
+        {
+          "epoch": 22,
+          "train_cross_entropy": 0.13608963881303304,
+          "selection_macro_f1": 0.9025786176792358
+        },
+        {
+          "epoch": 23,
+          "train_cross_entropy": 0.12919662663372244,
+          "selection_macro_f1": 0.9018049968104042
+        },
+        {
+          "epoch": 24,
+          "train_cross_entropy": 0.12432124710132664,
+          "selection_macro_f1": 0.9065723267245874
+        },
+        {
+          "epoch": 25,
+          "train_cross_entropy": 0.11997302788336775,
+          "selection_macro_f1": 0.9045819857289128
+        },
+        {
+          "epoch": 26,
+          "train_cross_entropy": 0.11539857654573588,
+          "selection_macro_f1": 0.9054723149411591
+        },
+        {
+          "epoch": 27,
+          "train_cross_entropy": 0.10877874045194275,
+          "selection_macro_f1": 0.9013792654893761
+        },
+        {
+          "epoch": 28,
+          "train_cross_entropy": 0.10569765440385528,
+          "selection_macro_f1": 0.9046561380786453
+        },
+        {
+          "epoch": 29,
+          "train_cross_entropy": 0.10211218679706381,
+          "selection_macro_f1": 0.9022731423933339
+        },
+        {
+          "epoch": 30,
+          "train_cross_entropy": 0.09462280373477758,
+          "selection_macro_f1": 0.9047463986798089
+        },
+        {
+          "epoch": 31,
+          "train_cross_entropy": 0.09093964628016973,
+          "selection_macro_f1": 0.9078793351939549
+        },
+        {
+          "epoch": 32,
+          "train_cross_entropy": 0.08517740398251575,
+          "selection_macro_f1": 0.9070065363052789
+        },
+        {
+          "epoch": 33,
+          "train_cross_entropy": 0.08543387460352463,
+          "selection_macro_f1": 0.9015968357932904
+        },
+        {
+          "epoch": 34,
+          "train_cross_entropy": 0.07896931338236614,
+          "selection_macro_f1": 0.9022585522480424
+        },
+        {
+          "epoch": 35,
+          "train_cross_entropy": 0.07678533505131478,
+          "selection_macro_f1": 0.9057082998588252
+        },
+        {
+          "epoch": 36,
+          "train_cross_entropy": 0.07300178807777805,
+          "selection_macro_f1": 0.9040857894224664
+        },
+        {
+          "epoch": 37,
+          "train_cross_entropy": 0.07240073631456856,
+          "selection_macro_f1": 0.9023292465298014
+        },
+        {
+          "epoch": 38,
+          "train_cross_entropy": 0.06491637903810643,
+          "selection_macro_f1": 0.9035363205295469
+        },
+        {
+          "epoch": 39,
+          "train_cross_entropy": 0.06669327673196998,
+          "selection_macro_f1": 0.9084910446941201
+        },
+        {
+          "epoch": 40,
+          "train_cross_entropy": 0.06209606535602184,
+          "selection_macro_f1": 0.901523825953481
+        },
+        {
+          "epoch": 41,
+          "train_cross_entropy": 0.06254082865300312,
+          "selection_macro_f1": 0.9031046511290806
+        },
+        {
+          "epoch": 42,
+          "train_cross_entropy": 0.057434133872822146,
+          "selection_macro_f1": 0.9076167137344271
+        },
+        {
+          "epoch": 43,
+          "train_cross_entropy": 0.0568577443056624,
+          "selection_macro_f1": 0.9066011235105607
+        },
+        {
+          "epoch": 44,
+          "train_cross_entropy": 0.05132911062572784,
+          "selection_macro_f1": 0.9051411539580729
+        },
+        {
+          "epoch": 45,
+          "train_cross_entropy": 0.05005393356632755,
+          "selection_macro_f1": 0.9050741406199518
+        },
+        {
+          "epoch": 46,
+          "train_cross_entropy": 0.05069929281936162,
+          "selection_macro_f1": 0.8994436246383716
+        },
+        {
+          "epoch": 47,
+          "train_cross_entropy": 0.04976921726828315,
+          "selection_macro_f1": 0.9061737949645559
+        }
+      ]
+    },
+    "43": {
+      "seed": 43,
+      "hidden_dim": 128,
+      "best_epoch": 41,
+      "selection_macro_f1": 0.9093824053644876,
+      "history": [
+        {
+          "epoch": 1,
+          "train_cross_entropy": 3.496032534368899,
+          "selection_macro_f1": 0.6033822670424065
+        },
+        {
+          "epoch": 2,
+          "train_cross_entropy": 1.4196568748040708,
+          "selection_macro_f1": 0.7781128509948715
+        },
+        {
+          "epoch": 3,
+          "train_cross_entropy": 0.7635091323853909,
+          "selection_macro_f1": 0.8303668079041422
+        },
+        {
+          "epoch": 4,
+          "train_cross_entropy": 0.5692377424007241,
+          "selection_macro_f1": 0.8586762661693493
+        },
+        {
+          "epoch": 5,
+          "train_cross_entropy": 0.4732863918028149,
+          "selection_macro_f1": 0.8676702949298608
+        },
+        {
+          "epoch": 6,
+          "train_cross_entropy": 0.4106997277109283,
+          "selection_macro_f1": 0.8750921156448526
+        },
+        {
+          "epoch": 7,
+          "train_cross_entropy": 0.36125857098559405,
+          "selection_macro_f1": 0.8927945118717643
+        },
+        {
+          "epoch": 8,
+          "train_cross_entropy": 0.3354787991259914,
+          "selection_macro_f1": 0.8943892463150055
+        },
+        {
+          "epoch": 9,
+          "train_cross_entropy": 0.2981256922020442,
+          "selection_macro_f1": 0.8916267892110905
+        },
+        {
+          "epoch": 10,
+          "train_cross_entropy": 0.28741476668327987,
+          "selection_macro_f1": 0.8964557568552596
+        },
+        {
+          "epoch": 11,
+          "train_cross_entropy": 0.2620409455870596,
+          "selection_macro_f1": 0.8964455445135483
+        },
+        {
+          "epoch": 12,
+          "train_cross_entropy": 0.2472326994173419,
+          "selection_macro_f1": 0.8920575621845391
+        },
+        {
+          "epoch": 13,
+          "train_cross_entropy": 0.23729748550467503,
+          "selection_macro_f1": 0.8948748839578547
+        },
+        {
+          "epoch": 14,
+          "train_cross_entropy": 0.21583932871895253,
+          "selection_macro_f1": 0.8938380230524072
+        },
+        {
+          "epoch": 15,
+          "train_cross_entropy": 0.2074673142764665,
+          "selection_macro_f1": 0.8977955829274271
+        },
+        {
+          "epoch": 16,
+          "train_cross_entropy": 0.18516179331072924,
+          "selection_macro_f1": 0.8979357782291352
+        },
+        {
+          "epoch": 17,
+          "train_cross_entropy": 0.18102114956908374,
+          "selection_macro_f1": 0.8951563469469532
+        },
+        {
+          "epoch": 18,
+          "train_cross_entropy": 0.17112472072496251,
+          "selection_macro_f1": 0.8992349060604433
+        },
+        {
+          "epoch": 19,
+          "train_cross_entropy": 0.16210737029511638,
+          "selection_macro_f1": 0.8958978147667832
+        },
+        {
+          "epoch": 20,
+          "train_cross_entropy": 0.15425037192402816,
+          "selection_macro_f1": 0.8987206542709641
+        },
+        {
+          "epoch": 21,
+          "train_cross_entropy": 0.15085725982413145,
+          "selection_macro_f1": 0.8977178958901662
+        },
+        {
+          "epoch": 22,
+          "train_cross_entropy": 0.1380407413217878,
+          "selection_macro_f1": 0.898574036935629
+        },
+        {
+          "epoch": 23,
+          "train_cross_entropy": 0.13389283464673057,
+          "selection_macro_f1": 0.8971643683664255
+        },
+        {
+          "epoch": 24,
+          "train_cross_entropy": 0.12464399825855427,
+          "selection_macro_f1": 0.9022958009799882
+        },
+        {
+          "epoch": 25,
+          "train_cross_entropy": 0.12005743014721719,
+          "selection_macro_f1": 0.8956723598096594
+        },
+        {
+          "epoch": 26,
+          "train_cross_entropy": 0.11900599047015091,
+          "selection_macro_f1": 0.905750171536536
+        },
+        {
+          "epoch": 27,
+          "train_cross_entropy": 0.10769961392937703,
+          "selection_macro_f1": 0.9049423350524005
+        },
+        {
+          "epoch": 28,
+          "train_cross_entropy": 0.107296700263222,
+          "selection_macro_f1": 0.905285833110172
+        },
+        {
+          "epoch": 29,
+          "train_cross_entropy": 0.10289587338177578,
+          "selection_macro_f1": 0.9017228706700854
+        },
+        {
+          "epoch": 30,
+          "train_cross_entropy": 0.09853584028906741,
+          "selection_macro_f1": 0.9039275688883727
+        },
+        {
+          "epoch": 31,
+          "train_cross_entropy": 0.09174286686279964,
+          "selection_macro_f1": 0.9043259958909445
+        },
+        {
+          "epoch": 32,
+          "train_cross_entropy": 0.08878087641709291,
+          "selection_macro_f1": 0.9035494558883668
+        },
+        {
+          "epoch": 33,
+          "train_cross_entropy": 0.08554592201552046,
+          "selection_macro_f1": 0.9036235100698098
+        },
+        {
+          "epoch": 34,
+          "train_cross_entropy": 0.0764369822822402,
+          "selection_macro_f1": 0.9068061380027677
+        },
+        {
+          "epoch": 35,
+          "train_cross_entropy": 0.07986781052566574,
+          "selection_macro_f1": 0.9041607403230022
+        },
+        {
+          "epoch": 36,
+          "train_cross_entropy": 0.07078469538977179,
+          "selection_macro_f1": 0.9037471387274268
+        },
+        {
+          "epoch": 37,
+          "train_cross_entropy": 0.07112565671094565,
+          "selection_macro_f1": 0.8996753924318619
+        },
+        {
+          "epoch": 38,
+          "train_cross_entropy": 0.06990287609289207,
+          "selection_macro_f1": 0.9016961059707833
+        },
+        {
+          "epoch": 39,
+          "train_cross_entropy": 0.062343296439474394,
+          "selection_macro_f1": 0.9052434698197109
+        },
+        {
+          "epoch": 40,
+          "train_cross_entropy": 0.06447313218469833,
+          "selection_macro_f1": 0.9048300891301443
+        },
+        {
+          "epoch": 41,
+          "train_cross_entropy": 0.061513559911501745,
+          "selection_macro_f1": 0.9093824053644876
+        },
+        {
+          "epoch": 42,
+          "train_cross_entropy": 0.0610801875398646,
+          "selection_macro_f1": 0.90934074989329
+        },
+        {
+          "epoch": 43,
+          "train_cross_entropy": 0.0579174498898207,
+          "selection_macro_f1": 0.9080601303174493
+        },
+        {
+          "epoch": 44,
+          "train_cross_entropy": 0.05671003298431044,
+          "selection_macro_f1": 0.9082795664474613
+        },
+        {
+          "epoch": 45,
+          "train_cross_entropy": 0.05469373598559959,
+          "selection_macro_f1": 0.9091167085622217
+        },
+        {
+          "epoch": 46,
+          "train_cross_entropy": 0.05027100497241919,
+          "selection_macro_f1": 0.9067225649810084
+        },
+        {
+          "epoch": 47,
+          "train_cross_entropy": 0.04775625784715268,
+          "selection_macro_f1": 0.9051166942362314
+        },
+        {
+          "epoch": 48,
+          "train_cross_entropy": 0.04726502135357477,
+          "selection_macro_f1": 0.9074154970874825
+        },
+        {
+          "epoch": 49,
+          "train_cross_entropy": 0.04516851460880605,
+          "selection_macro_f1": 0.9046958460234024
+        }
+      ]
+    },
+    "44": {
+      "seed": 44,
+      "hidden_dim": 128,
+      "best_epoch": 34,
+      "selection_macro_f1": 0.9081855941892142,
+      "history": [
+        {
+          "epoch": 1,
+          "train_cross_entropy": 3.5221372457524547,
+          "selection_macro_f1": 0.5570603584189512
+        },
+        {
+          "epoch": 2,
+          "train_cross_entropy": 1.444266883352987,
+          "selection_macro_f1": 0.7600342694943162
+        },
+        {
+          "epoch": 3,
+          "train_cross_entropy": 0.7713570113293023,
+          "selection_macro_f1": 0.8434509970160895
+        },
+        {
+          "epoch": 4,
+          "train_cross_entropy": 0.5698684608754807,
+          "selection_macro_f1": 0.8561412364526642
+        },
+        {
+          "epoch": 5,
+          "train_cross_entropy": 0.4702845653115042,
+          "selection_macro_f1": 0.8693416619126837
+        },
+        {
+          "epoch": 6,
+          "train_cross_entropy": 0.4111886334056246,
+          "selection_macro_f1": 0.8770987768253057
+        },
+        {
+          "epoch": 7,
+          "train_cross_entropy": 0.3702565631932207,
+          "selection_macro_f1": 0.8879504138947399
+        },
+        {
+          "epoch": 8,
+          "train_cross_entropy": 0.3339292327842641,
+          "selection_macro_f1": 0.8885562167279235
+        },
+        {
+          "epoch": 9,
+          "train_cross_entropy": 0.3079867463915282,
+          "selection_macro_f1": 0.8882237218837636
+        },
+        {
+          "epoch": 10,
+          "train_cross_entropy": 0.28790596448563527,
+          "selection_macro_f1": 0.8927755546832691
+        },
+        {
+          "epoch": 11,
+          "train_cross_entropy": 0.26580974457935846,
+          "selection_macro_f1": 0.8967392153143937
+        },
+        {
+          "epoch": 12,
+          "train_cross_entropy": 0.24675033221177006,
+          "selection_macro_f1": 0.8932142542479633
+        },
+        {
+          "epoch": 13,
+          "train_cross_entropy": 0.23415443612836756,
+          "selection_macro_f1": 0.8952107759965345
+        },
+        {
+          "epoch": 14,
+          "train_cross_entropy": 0.22363397173842492,
+          "selection_macro_f1": 0.8982179062192179
+        },
+        {
+          "epoch": 15,
+          "train_cross_entropy": 0.2070694827581404,
+          "selection_macro_f1": 0.8998297340193152
+        },
+        {
+          "epoch": 16,
+          "train_cross_entropy": 0.20108681098290196,
+          "selection_macro_f1": 0.8979725957900638
+        },
+        {
+          "epoch": 17,
+          "train_cross_entropy": 0.1838082356426059,
+          "selection_macro_f1": 0.8941038096392391
+        },
+        {
+          "epoch": 18,
+          "train_cross_entropy": 0.1752337574085536,
+          "selection_macro_f1": 0.9006025051890123
+        },
+        {
+          "epoch": 19,
+          "train_cross_entropy": 0.16979886842284247,
+          "selection_macro_f1": 0.8976529279761383
+        },
+        {
+          "epoch": 20,
+          "train_cross_entropy": 0.16449434781290273,
+          "selection_macro_f1": 0.901689194846202
+        },
+        {
+          "epoch": 21,
+          "train_cross_entropy": 0.14724948799788215,
+          "selection_macro_f1": 0.9040285798482741
+        },
+        {
+          "epoch": 22,
+          "train_cross_entropy": 0.145290756826598,
+          "selection_macro_f1": 0.9071477898037305
+        },
+        {
+          "epoch": 23,
+          "train_cross_entropy": 0.13906384393448668,
+          "selection_macro_f1": 0.9026097682515356
+        },
+        {
+          "epoch": 24,
+          "train_cross_entropy": 0.1339455821268588,
+          "selection_macro_f1": 0.9043877233583645
+        },
+        {
+          "epoch": 25,
+          "train_cross_entropy": 0.12422847881575008,
+          "selection_macro_f1": 0.9048027231608058
+        },
+        {
+          "epoch": 26,
+          "train_cross_entropy": 0.11749419778653926,
+          "selection_macro_f1": 0.9019096819966146
+        },
+        {
+          "epoch": 27,
+          "train_cross_entropy": 0.11632693461545135,
+          "selection_macro_f1": 0.9077003357099575
+        },
+        {
+          "epoch": 28,
+          "train_cross_entropy": 0.1072144302780585,
+          "selection_macro_f1": 0.9025159596177482
+        },
+        {
+          "epoch": 29,
+          "train_cross_entropy": 0.10492805421729089,
+          "selection_macro_f1": 0.9038618810756235
+        },
+        {
+          "epoch": 30,
+          "train_cross_entropy": 0.10165976507803792,
+          "selection_macro_f1": 0.9020885482957468
+        },
+        {
+          "epoch": 31,
+          "train_cross_entropy": 0.0961260427665998,
+          "selection_macro_f1": 0.9060418894648778
+        },
+        {
+          "epoch": 32,
+          "train_cross_entropy": 0.09215324822812203,
+          "selection_macro_f1": 0.9050594286093439
+        },
+        {
+          "epoch": 33,
+          "train_cross_entropy": 0.09031149231194936,
+          "selection_macro_f1": 0.9051252840937598
+        },
+        {
+          "epoch": 34,
+          "train_cross_entropy": 0.08381694924922141,
+          "selection_macro_f1": 0.9081855941892142
+        },
+        {
+          "epoch": 35,
+          "train_cross_entropy": 0.08190830534977393,
+          "selection_macro_f1": 0.9061689336935944
+        },
+        {
+          "epoch": 36,
+          "train_cross_entropy": 0.08298547244241476,
+          "selection_macro_f1": 0.906508532038528
+        },
+        {
+          "epoch": 37,
+          "train_cross_entropy": 0.07551107583666491,
+          "selection_macro_f1": 0.9063168264662941
+        },
+        {
+          "epoch": 38,
+          "train_cross_entropy": 0.06951019752431416,
+          "selection_macro_f1": 0.9081478885483129
+        },
+        {
+          "epoch": 39,
+          "train_cross_entropy": 0.06893357656804079,
+          "selection_macro_f1": 0.9047979417689715
+        },
+        {
+          "epoch": 40,
+          "train_cross_entropy": 0.0687345129364705,
+          "selection_macro_f1": 0.9075963172997518
+        },
+        {
+          "epoch": 41,
+          "train_cross_entropy": 0.06539940862940222,
+          "selection_macro_f1": 0.9033047927859106
+        },
+        {
+          "epoch": 42,
+          "train_cross_entropy": 0.06250699260425924,
+          "selection_macro_f1": 0.9057642395607541
+        }
+      ]
+    }
+  },
+  "plan_sha256": "4fc5c33bbe887830c7ca2427340b21943a00e17cfd78a104c183cb1ad4f53365",
+  "locked_before_test_evaluation": true,
+  "audit": {
+    "official_train_rows": 10003,
+    "official_test_rows": 3080,
+    "classes": 77,
+    "removed_training_rows": {
+      "duplicate_train_rows_removed": 30,
+      "test_overlap_train_rows_removed": 25,
+      "conflicting_train_rows_removed": 2
+    },
+    "split_sizes": {
+      "train": 6962,
+      "selection": 1492,
+      "calibration": 1492,
+      "test": 3080
+    },
+    "test_internal_normalized_duplicates": 4,
+    "decontamination": "Full official test preserved; matching normalized inputs removed from training candidates, without consulting test labels.",
+    "pairwise_split_text_overlaps": 0,
+    "split_id_sha256": {
+      "train": "b31e4d53e950b2e0cb110b2ea8cd2949896d7d625eb97a31a38bb3c4232c88ef",
+      "selection": "6e60f8eec9987dc7891839065c351201fc78b0750e21f160aebad37546b7165f",
+      "calibration": "3c6e1e3b7504d06a9431390d02eea3dfe5ea6834e2789a95912d65ec0695371b",
+      "test": "3e8531568dd6173db9832f5705dbd8f9dd18beac7923c68db53b57c379f31b64"
+    }
+  }
+}

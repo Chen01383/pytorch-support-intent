@@ -1,0 +1,102 @@
+[
+  {
+    "count": 6,
+    "true": "card_arrival",
+    "predicted": "card_delivery_estimate"
+  },
+  {
+    "count": 4,
+    "true": "pending_transfer",
+    "predicted": "transfer_not_received_by_recipient"
+  },
+  {
+    "count": 4,
+    "true": "declined_transfer",
+    "predicted": "declined_card_payment"
+  },
+  {
+    "count": 4,
+    "true": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_not_received_by_recipient"
+  },
+  {
+    "count": 3,
+    "true": "wrong_amount_of_cash_received",
+    "predicted": "declined_cash_withdrawal"
+  },
+  {
+    "count": 3,
+    "true": "verify_my_identity",
+    "predicted": "why_verify_identity"
+  },
+  {
+    "count": 3,
+    "true": "transfer_timing",
+    "predicted": "pending_transfer"
+  },
+  {
+    "count": 3,
+    "true": "transfer_timing",
+    "predicted": "balance_not_updated_after_bank_transfer"
+  },
+  {
+    "count": 3,
+    "true": "transfer_not_received_by_recipient",
+    "predicted": "failed_transfer"
+  },
+  {
+    "count": 3,
+    "true": "top_up_by_bank_transfer_charge",
+    "predicted": "transfer_fee_charged"
+  },
+  {
+    "count": 3,
+    "true": "pin_blocked",
+    "predicted": "change_pin"
+  },
+  {
+    "count": 3,
+    "true": "pending_top_up",
+    "predicted": "topping_up_by_card"
+  },
+  {
+    "count": 3,
+    "true": "get_disposable_virtual_card",
+    "predicted": "getting_virtual_card"
+  },
+  {
+    "count": 3,
+    "true": "fiat_currency_support",
+    "predicted": "exchange_via_app"
+  },
+  {
+    "count": 3,
+    "true": "exchange_via_app",
+    "predicted": "fiat_currency_support"
+  },
+  {
+    "count": 3,
+    "true": "card_payment_not_recognised",
+    "predicted": "compromised_card"
+  },
+  {
+    "count": 3,
+    "true": "card_acceptance",
+    "predicted": "supported_cards_and_currencies"
+  },
+  {
+    "count": 3,
+    "true": "balance_not_updated_after_bank_transfer",
+    "predicted": "transfer_timing"
+  },
+  {
+    "count": 2,
+    "true": "wrong_exchange_rate_for_cash_withdrawal",
+    "predicted": "card_payment_wrong_exchange_rate"
+  },
+  {
+    "count": 2,
+    "true": "virtual_card_not_working",
+    "predicted": "card_not_working"
+  }
+]
